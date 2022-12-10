@@ -1,10 +1,9 @@
 ## **Predicting Remaining Useful Life (RUL) of Turbofan Engines: A Machine Learning Approach**
 
-Introduction:
+#### Project Description:
+---------------------
 
-
-
-### Directory Structure
+#### Directory Structure
 ---------------------
 
     .
