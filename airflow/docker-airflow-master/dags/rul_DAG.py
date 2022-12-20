@@ -1,6 +1,7 @@
 from airflow import DAG
-from airflow.operators.bash import BashOperator
+#from airflow.operators.bash import BashOperator
 from datetime import datetime, timedelta
+from airflow.operators.bash_operator import BashOperator
 
 # instantiate DAG
 with DAG(
@@ -16,12 +17,12 @@ with DAG(
         },
     description='Predicting Remaining Useful Life of Turbofan Engines',
     schedule_interval=timedelta(days=1),
-    start_date=datetime(2022, 12, 16)
+    start_date=datetime(2022, 12, 18)
 ) as dag:
 
     # load data to raw data folder
     get__data = BashOperator(
         task_id='get_data',
-        bash_command='python3 ~/airflow/scripts/get_data.py',
+        bash_command="Hello World",
     )
 

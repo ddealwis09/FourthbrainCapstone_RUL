@@ -103,5 +103,5 @@ bin/
 # exclude external models from source control
 /src/external/
 
-
-Docker.dmg
+# exclude docker file
+airflow/Docker.dmg
